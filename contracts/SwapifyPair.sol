@@ -85,9 +85,9 @@ contract SwapifyPair is ISwapifyPair, SwapifyERC20 {
         emit Sync(reserve0, reserve1);
     }
 
-    // if fee is on, mint liquidity equivalent to 3/20th of the growth in sqrt(k)
+    // if fee is on, mint liquidity equivalent to 1/6th of the growth in sqrt(k)
     function _mintFee(uint112 _reserve0, uint112 _reserve1) private returns (bool feeOn) {
-        address feeTo = IPancakeFactory(factory).feeTo();
+        address feeTo = ISwapifyFactory(factory).feeTo();
         feeOn = feeTo != address(0);
         uint _kLast = kLast; // gas savings
         if (feeOn) {
@@ -95,8 +95,8 @@ contract SwapifyPair is ISwapifyPair, SwapifyERC20 {
                 uint rootK = Math.sqrt(uint(_reserve0).mul(_reserve1));
                 uint rootKLast = Math.sqrt(_kLast);
                 if (rootK > rootKLast) {
-                    uint numerator = totalSupply.mul(rootK.sub(rootKLast)).mul(3);
-                    uint denominator = rootK.mul(17).add(rootKLast.mul(3));
+                    uint numerator = totalSupply.mul(rootK.sub(rootKLast));
+                    uint denominator = rootK.mul(3).add(rootKLast);
                     uint liquidity = numerator / denominator;
                     if (liquidity > 0) _mint(feeTo, liquidity);
                 }

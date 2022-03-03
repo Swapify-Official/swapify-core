@@ -29,7 +29,7 @@ describe('SwapifyERC20', () => {
 
   it('name, symbol, decimals, totalSupply, balanceOf, DOMAIN_SEPARATOR, PERMIT_TYPEHASH', async () => {
     const name = await token.name()
-    expect(name).to.eq('SWAPIFY LP Token')
+    expect(name).to.eq('Swapify LP Token')
     expect(await token.symbol()).to.eq('SWAPIFY-LP')
     expect(await token.decimals()).to.eq(18)
     expect(await token.totalSupply()).to.eq(TOTAL_SUPPLY)

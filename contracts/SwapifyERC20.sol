@@ -7,7 +7,7 @@ contract SwapifyERC20 is ISwapifyERC20 {
     using SafeMath for uint;
 
     string public constant name = 'Swapify LP Token';
-    string public constant symbol = 'Swapify-LP';
+    string public constant symbol = 'SWAPIFY-LP';
     uint8 public constant decimals = 18;
     uint  public totalSupply;
     mapping(address => uint) public balanceOf;
