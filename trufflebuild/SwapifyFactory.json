@@ -6281,66 +6281,15 @@
     "version": "0.5.16+commit.9c3226ce.Emscripten.clang"
   },
   "networks": {
-    "80001": {
-      "events": {
-        "0x8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e0": {
-          "anonymous": false,
-          "inputs": [
-            {
-              "indexed": true,
-              "internalType": "address",
-              "name": "previousOwner",
-              "type": "address"
-            },
-            {
-              "indexed": true,
-              "internalType": "address",
-              "name": "newOwner",
-              "type": "address"
-            }
-          ],
-          "name": "OwnershipTransferred",
-          "type": "event"
-        },
-        "0x0d3648bd0f6ba80134a33ba9275ac585d9d315f0ad8355cddefde31afa28d0e9": {
-          "anonymous": false,
-          "inputs": [
-            {
-              "indexed": true,
-              "internalType": "address",
-              "name": "token0",
-              "type": "address"
-            },
-            {
-              "indexed": true,
-              "internalType": "address",
-              "name": "token1",
-              "type": "address"
-            },
-            {
-              "indexed": false,
-              "internalType": "address",
-              "name": "pair",
-              "type": "address"
-            },
-            {
-              "indexed": false,
-              "internalType": "uint256",
-              "name": "",
-              "type": "uint256"
-            }
-          ],
-          "name": "PairCreated",
-          "type": "event"
-        }
-      },
+    "3": {
+      "events": {},
       "links": {},
-      "address": "0x869dD5A1De4D7C8bA1854985cB02c24da9490111",
-      "transactionHash": "0x693f7355e53aa88da7df460d7d6c707b03cd59eff749c560c73b4df39f7a771a"
+      "address": "0x6c92565b5eC16588A8b5929A118e7768b6072395",
+      "transactionHash": "0xaaea557d6b5df4f39ac4206a544ea55f1548e003d7844b1ddab3d616653b8203"
     }
   },
   "schemaVersion": "3.4.1",
-  "updatedAt": "2022-03-03T19:20:15.294Z",
+  "updatedAt": "2022-03-21T21:28:28.374Z",
   "networkType": "ethereum",
   "devdoc": {
     "methods": {

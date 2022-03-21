@@ -1874,7 +1874,7 @@
   },
   "networks": {},
   "schemaVersion": "3.4.1",
-  "updatedAt": "2022-03-03T19:16:20.115Z",
+  "updatedAt": "2022-03-21T21:25:52.230Z",
   "devdoc": {
     "methods": {
       "addPermittedAccount(address)": {
